@@ -1,0 +1,133 @@
+<html>
+
+<head>    
+   <title>  Welcome Page  </title> 
+   <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Localstorage.js"> 
+   <!-- Javacript Page Link -->
+   <style>  
+   
+   body{
+    background-image: url('libr.jpg') ; 
+}
+   
+   .a{
+    color: white;
+    font-size: 50px;
+    margin: 50px ;
+    text-align: center;
+    font-family: 'Baloo Bhai' , cursive;
+   }
+   .main{
+    color: black;
+    font-size: 40px;
+    background-color: aliceblue;
+    padding: 5px 5px;
+    border-radius: 10px;
+   }
+   .left img{
+    display: flex;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 1330px;
+    margin-top: -120px;
+    width: 150px;
+    height: 150px;
+    border-radius: 33px;
+   }
+   .admin{
+    text-align: center;
+    color: white;
+   }
+   .para{
+     font-size: 20px;
+     font-family: Georgia;
+   }
+   .link{
+        font-family: 'Lucida Sans';
+        color: aqua;
+        padding: 4px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover{
+        color: rgb(2, 31, 249);
+        background-color: aqua;
+        text-decoration: underline;
+      }
+      .container{
+        background-color: yellow;
+     }
+
+     .box{
+        background-color: aqua;
+        width: 1100px;
+        font-size: 20px;
+        border-radius: 20px;
+        height: 30px;
+        margin-top: 320px;
+        margin-left: 210px;
+        text-align: center;
+        align-content: center;
+        position: relative;
+        animation-name: satyam;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: alternate;
+        animation-fill-mode: forwards;
+        /* animation-timing-function: ease-in-out; */
+     }
+     @keyframes satyam{
+       0%{
+        margin-left: 210px;
+       }
+       25%{
+        margin-left: 10px;
+       }
+       50%{
+        margin-left: 210px;
+       }
+       75%{
+        margin-left: 410px;
+       }
+       100%{
+        margin-left: 210px;
+       }
+     }
+   </style> 
+</head>   
+
+<body>
+    <!-- <center> -->
+        <div class="header">
+            
+            <h1 class="a">National Institute of Technology, Patna</h1>
+        </div>
+        <div class="left">
+            <img src="NitpLogo.jpeg" alt="">
+        </div>
+        <!-- <br> -->
+        <div class="admin">
+            <span class="main">Welcome to The Central Library</span> <br> <br>
+            <p class="para"><br>For Admin login &nbsp;<a href="3AdminLoginPage.html" class="link" target="_blank">Click here</a></p>
+            <p class="para">For Student login <a href="2StudentLoginPage.html" class="link" target="_blank">Click here</a></p>
+          <div class="dropdown"><p class="para">For New Registration <a href="9RegistrationPage.html" class="link" target="_blank">
+              Click here</a></p></div>
+
+        </div>
+        <div class="container">
+          <div class="box">
+            Welcome to the world of knowledge,Our Library is the Asia's 3<sup>rd</sup>
+             Largest Library with a collection of over 5 Lakh+ books.
+
+          </div>
+        </div>
+    <!-- </center> -->
+</body>  
+
+</html>

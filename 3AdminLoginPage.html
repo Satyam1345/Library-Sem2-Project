@@ -1,0 +1,111 @@
+<html>
+
+<head>
+
+    <title>Student Login Form</title>
+    <link rel="stylesheet" href="Localstorage.js"> 
+   <!-- Javacript Page Link -->
+<style>
+    
+    body{
+        background-color: aqua;
+    }
+    h2{
+        text-align: center;
+        color: blue;
+        background-color: aqua;
+    }
+    .src{
+        border-radius: 30px;
+        align-items: center;
+        width: 1000px;
+        margin-left: 250px;     
+    }
+    .edit{
+        color: blue;
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    .edit:hover{
+        color: rgb(1, 1, 207);
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    #rem{
+        margin-left: -195px;
+    }
+    .password{
+        margin-left: -195px;
+        color: blue;
+        cursor: pointer;
+    }
+    .password:hover{
+        color: rgb(1, 1, 207);
+        text-decoration: underline;
+    }
+    .new{
+        font-size: 22px;
+    }
+    .new2{
+     color: blue; 
+     cursor: pointer;  
+    }
+    .new2:hover{
+        color: rgb(1, 1, 207);
+        text-decoration: underline;
+    }
+    .welcome{
+        background-color: rgb(255, 115, 115);
+        font-size: 30px;
+        color:yellow;
+    }
+    #wel{
+        color: aqua;
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+   <img src="header.jpg" alt="" class="src">
+<center>
+<br><br><br>
+
+    <div class="welcome" id="wel">Admin Login Page</div><br><br>
+    <form id="login-form">
+
+        <label for="username" class="edit">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password" class="edit">Password:</label> 
+        <input type="password" id="password" name="password"><br><br>
+        
+        <input type="checkbox" id="rem" name="rem" value="rem">Remember Me <br><br>
+        <!-- <button type="checkbox" id="rem">Remember me</button><br> -->
+        
+        <button type="submit" class="edit">Login</button><br><br>
+        <div class="password">Forgot password?</div><br><br>
+        <div class="new">Don't have an Account? <a href="9RegistrationPage.html" class="link" target="_blank"><span class="new2"> Sign Up </span></a></div>
+    </form>
+</center> 
+<script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'admin1' && password === 'admin123') {
+            window.location.href = '4AdminPage.html';
+        }
+        else if (username === 'admin2' && password === 'admin456') {
+            window.location.href = '4AdminPage.html';
+        }
+        else {
+            alert('Invalid username or password');
+        }
+    });
+
+</script>
+</body>
+</html>   

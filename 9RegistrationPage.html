@@ -1,0 +1,171 @@
+<html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+    <script src="javasc.js"></script>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .src {
+            border-radius: 30px;
+            align-items: center;
+            width: 1000px;
+            margin-left: 250px;
+        }
+
+        #wel {
+            color: yellow;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        .welcome {
+            background-color: rgb(255, 115, 115);
+            font-size: 30px;
+            color: yellow;
+            border-radius: 20px;
+        }
+
+        .input {
+            border-radius: 5px;
+            border-color: brown;
+        }
+
+        .text {
+            font-size: 24px;
+        }
+
+        #sel {
+            width: 169px;
+        }
+
+        .inptxt {
+            font-size: 24px;
+            font-style: bold;
+        }
+
+        #wel2 {
+            color: blue;
+            border-radius: 15px;
+        }
+
+        .para {
+            font-size: 20px;
+            font-family: Georgia;
+        }
+
+        .link {
+            font-family: 'Lucida Sans';
+            color: aqua;
+            padding: 4px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn {
+            color: blue;
+            font-size: 30px;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            color: rgb(1, 1, 207);
+            font-size: 30px;
+            border-radius: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(2, 31, 249);
+            background-color: aqua;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="header.jpg" alt="" class="src">
+    <div class="header"></div>
+    <center>
+        <br>
+        <div class="welcome">Welcome to the Central Library of NIT Patna. Our library aims at building Intellectuals,
+            the place where our community learns and works together in physical and virtual spaces. The library is
+            student-focused.<br><br>
+            <div class="welc" id="wel">Registration Page</div><br>
+            <form class="register" onsubmit="event.preventDefault(); registerUser();">
+                <table class="register">
+                    <tr>
+                        <td class="text">First Name :</td>
+                        <td><input type="text" required id="first_name" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Last Name :</td>
+                        <td><input type="text" required id="last_name" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Username :</td>
+                        <td><input type="text" required id="username" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Email :</td>
+                        <td><input type="email" required id="email" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Phone no. :</td>
+                        <td><input type="tel" required id="phone" class="input" pattern="[0-9]{10}"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Roll no. :</td>
+                        <td><input type="text" required id="roll" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text" id="branch">Branch :</td>
+                        <td>
+                            <select required id="branch_select" class="input">
+                                <option value="">Select Your Branch</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="ME">ME</option>
+                                <option value="EE">EE</option>
+                                <option value="CE">CE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text">Password :</td>
+                        <td><input type="password" required id="password" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Confirm Password :</td>
+                        <td><input type="password" required id="confirm" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Agree to Terms :</td>
+                        <td><input type="checkbox" required id="terms" class="input"></td>
+                    </tr>
+                </table>
+                <br>
+                <button class="btn">Register</button>
+                <p class="para">Already Registered <a href="1WelcomePage.html" class="link">click here</a></p>
+            </form>
+        </div>
+    </center>
+    <center>
+        <div class="welcome" id="wel2">Genius is one percent inspiration, ninety-nine percent perspiration.</div>
+    </center>
+
+    <script src="credential.js"></script>
+</body>
+
+</html>
+
+

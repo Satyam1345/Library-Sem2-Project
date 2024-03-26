@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Student Login Form</title>
+    <!-- <link rel="stylesheet" href="javasc.js">  -->
+   <!-- Javacript Page Link -->
+<style>
+    body{
+        background-color: aqua;
+    }
+    h2{
+        text-align: center;
+        color: blue;
+        background-color: aqua;
+    }
+    .src{
+        border-radius: 30px;
+        align-items: center;
+        width: 1000px;
+        margin-left: 250px;     
+    }
+    .edit{
+        color: blue;
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    .edit:hover{
+        color: rgb(1, 1, 207);
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    #rem{
+        margin-left: -195px;
+    }
+    .password{
+        margin-left: -195px;
+        color: blue;
+        cursor: pointer;
+    }
+    .password:hover{
+        color: rgb(1, 1, 207);
+        text-decoration: underline;
+    }
+    .new{
+        font-size: 22px;
+    }
+    .new2{
+     color: blue; 
+     cursor: pointer;  
+    }
+    .new2:hover{
+        color: rgb(1, 1, 207);
+        text-decoration: underline;
+    }
+    .welcome{
+        background-color: rgb(255, 115, 115);
+        font-size: 30px;
+        color:yellow;
+        border-radius: 20px;
+    }
+     #branch{
+        width: 170px;
+    }
+    #wel{
+        color: aqua;
+        text-decoration: underline;
+    }
+    #wel2{
+        color: aqua;
+        border-radius: 15px;
+    }
+</style>
+</head>
+
+<body>
+    <script src="javasc.js"></script>
+   <img src="header.jpg" alt="" class="src">
+<center>
+<br><br><br>
+<div class="welcome">Welcome to the Central Library of NIT Patna. Our library aims at building Intelectuals, the place where our 
+    community learns and works together in physical and virtual spaces.The library is student-focused. 
+    <div class="welcome" id="wel">Student Login Page</div>
+</div>
+<br><br><br><br><br><br>
+    <form id="login-form">
+
+        <label for="username" class="edit">Username:</label>
+
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password" class="edit">Password:</label> <input type="password" id="password" name="password"><br><br>
+       
+        <input type="checkbox" id="rem" name="rem" value="rem">Remember Me <br><br>
+        <!-- <button type="checkbox" id="rem">Remember me</button><br> -->
+        <button type="submit" class="edit" onclick="loginUser()">Login</button><br><br>
+        <div class="password">Forgot password?</div><br><br>
+        <div class="new">Don't have an Account? <a href="9RegistrationPage.html" class="link" target="_blank"><span class="new2"> Sign Up </span></a></div>
+    </form>
+    
+    <!-- <form id="login-form" >
+
+        <label for="username">Username:</label> <input type="text" id="usern" name="username" ><br><br>
+
+        <label for="password">Password: </label> <input type="password" id="pass" name="password" ><br><br>
+
+        <button  class="btn" onclick="loginUser()">Login</button>
+
+         </form> -->
+<br><br><br><br><br><br>
+    <div  class="welcome" id="wel2">Genius is one percent inspiration, ninety-nine percent perspiration.</div>
+</center> 
+<script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'cs' && password === 'cs@123') {
+            window.location.href = '5CsDept.html';
+        }
+        else if (username === 'mech' && password === 'mech@123') {
+            window.location.href = '6MechDept.html';
+        }
+        else if (username === 'ece' && password === 'ece@123') {
+            window.location.href = '10EceDept.html';
+        }
+        else if (username === 'ee' && password === 'ee@123') {
+            window.location.href = '12ElectricalDept.html';
+        }
+        else if (username === 'ce' && password === 'ce@123') {
+            window.location.href = '14CivilDept.html';
+        }
+        else {
+            alert('Invalid username or password');
+        }
+    });
+
+</script>
+</body>
+</html>   

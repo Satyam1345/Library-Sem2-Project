@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Admin Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+<style>
+    .a{
+    color: rgb(0, 119, 255);
+    font-size: 50px;
+    margin: 50px ;
+    text-align: center;
+    font-family: 'Baloo Bhai' , cursive;
+   }
+   .src{
+        border-radius: 30px;
+        align-items: center;
+        width: 1000px;
+        margin-left: 250px;     
+    }
+    body{
+        background-color: aqua;
+    }
+    .container{
+            height: 240px;
+            width: 100%;
+            border: 2px dashed red ;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            align-items: center;
+
+         }
+         .item{
+            background-color: rgb(216, 39, 8);
+            border: green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 180px;
+            align-self: center;
+            align-items:center;
+            text-align: center;
+            padding: 1%;
+            border-radius: 30px;
+            font-size: 25px;
+            color: yellow;
+         }
+        .text:hover{
+          color: rgb(0, 255, 64);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .signout{
+            font-size: 30px;
+            color: blue;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .signout:hover{
+            color: rgb(111, 0, 255);
+            text-decoration: underline;
+        }
+</style>
+</head>
+
+<body>
+    <img src="header.jpg" alt="" class="src">
+<h2 class="a">WELCOME TO ADMIN PAGE!</h2> <br> <br>
+<!-- <h3 align="center" font-size="30px" >List of all books <br> <br> -->
+   
+    <div class="container">
+    <div class="item" id="item1"> <br> <br> <span class="text"> Department Wise Out Book List </span.text></div>
+    <div class="item" id="item2"> <br> <br> <span class="text"> Add New Books in the Database </span.text></div>
+    <div class="item" id="item3"> <br> <br> <span class="text"> Update Returned Book List </span.text></div>
+    <div class="item" id="item4"> <br> <br> <span class="text"> Send Notice to Students </span.text></div>
+    </div>
+<center><a href="1WelcomePage.html" class="signout"> <br> Sign Out <a></a></center>
+</body>
+</html>

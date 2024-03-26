@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Civil Dept</title>
+    <style>
+        .src{
+        border-radius: 30px;
+        align-items: center;
+        width: 800px;
+        margin-left: 350px;     
+    }
+    body{
+        background-color: aqua;
+        background-image: url('CivilDept.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+            height: 240px;
+            width: 60%;
+            margin-left: 300px;
+            border: 2px dashed rgb(255, 0, 0) ;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+    .item{
+            background-color: rgb(120, 255, 1);
+            border: green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 180px;
+            align-self: center;
+            align-items:center;
+            text-align: center;
+            padding: 1%;
+            border-radius: 30px;
+            font-size: 25px;
+            color: rgb(255, 0, 247);
+            text-decoration: none;
+         }
+         .item:hover{
+          color: rgb(0, 81, 255);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .wel{
+            color: rgb(240, 15, 15);
+            background-color: beige;
+            border-radius: 20px;
+            font-family: 'Gill Sans';
+            font-size: 40px;
+        }
+        .signout{
+            font-size: 30px;
+            color: blue;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .signout:hover{
+            color: rgb(111, 0, 255);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="header.jpg" alt="" class="src">
+    <br><br>
+    <h2 align="center" class="wel">Welcome to Civil Engineering Department</h2>
+    <br> <br>
+    <div class="container">
+        <div class="item" id="item1"> <br> <br> <span class="text"><a href="15CivilBooks.html" class="item"> 
+            List of E-Books</a>
+        </span></div>
+        <div class="item" id="item2"> <br> <br> <span class="text"><a href="16IssuedBooks.html" class="item">
+             My Offline Issued Books </a></span></div>
+             <div class="item" id="item3"> <br> <br> <span class="text"><a href = "17ExploreBooks.html" class="item">            
+                Explore More Books </a></span></div>
+        </div>
+    </div>
+    <center><a href="1WelcomePage.html" class="signout"> <br> Sign Out <a></a></center>
+</body>
+
+</html>

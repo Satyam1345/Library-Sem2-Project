@@ -1,0 +1,188 @@
+<html>
+
+<head>    
+   <title>  Registration Page  </title> 
+   <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+   
+   <!-- Javacript Page Link -->
+  
+   <style>   
+
+   body{
+    background-color: aqua; 
+   }
+   .src{
+        border-radius: 30px;
+        align-items: center;
+        width: 1000px;
+        margin-left: 250px;     
+    }
+
+    #wel{
+        color: aqua;
+        text-decoration: underline;
+    }
+
+    .welcome{
+        background-color: rgb(255, 115, 115);
+        font-size: 30px;
+        color:yellow;
+        border-radius: 20px;
+    }
+    .input{
+        border-radius: 5px ;
+        border-color: brown;
+
+    }
+    #sel{
+        width: 169px;
+    }
+    .inptxt{
+        font-size: 24px;
+        font-style: bold;
+    }
+    .submit{
+        color: blue;
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    .submit:hover{
+        color: rgb(1, 1, 207);
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    #wel2{
+        color: blue;
+        border-radius: 15px;
+    }
+    .btn{
+        color: blue;
+        font-size: 30px;
+        border-radius: 8px;
+    }
+    .btn:hover{
+        color: rgb(1, 1, 207);
+        font-size: 30px;
+        border-radius: 8px;
+    }
+   </style> 
+</head>   
+
+<body>    
+    <!-- <script src="Localstorage.js"></script> -->
+    <script src="credential.js"></script>
+    <img src="header.jpg" alt="" class="src">
+    <div class="header">
+        
+     
+    </div>
+    <center>
+
+        <br>
+        <div class="welcome">Welcome to the Central Library of NIT Patna. Our library aims at building Intelectuals, the place where our 
+            community learns and works together in physical and virtual spaces.The library is student-focused. 
+            <br><br>
+        <div class="welcome" id="wel">Registration Page</div><br>
+        <form action="login_student.html" class="register">
+            <table class="register">
+                <tr>
+                    <td>First Name :</td>
+                    <td><input type="text" required id="first_name" placeholder="Enter first name"></td>
+
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" required id="last_name" placeholder="Enter last name"></td>
+
+                </tr>
+                <tr>
+                    <td> Username :</td>
+                    <td><input type="text" required id="username" placeholder="Enter Username"></td>
+
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" required id="email" placeholder="Enter Email"></td>
+
+                </tr>
+                <tr>
+                    <td>Phone no. :</td>
+                    <td><input type="text" required id="phone" placeholder="Enter Phone no."></td>
+                </tr>
+                <tr>
+                    <td>Roll no. :</td>
+                    <td><input type="text" required id="roll" placeholder="Enter Roll no."></td>
+
+                </tr>
+                <tr>
+                    <td>Year :</td>
+                    <td><input type="radio" id="year" value="first">First
+                        <input type="radio" id="year" value="Second">Second
+                        <input type="radio" id="year" value="Third or fourth">Third or Fourth
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Branch :</td>
+                    <td>
+                        <Select required class="register" id="branch">
+                    <option value="Select Your Branch">Select Your Branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="ME">ME</option>
+                    <option value="EE">EE</option>
+                    <option value="CE">CE</option>
+                </Select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Hobbies :</td>
+                    <td>
+                        <input type="checkbox" id="hobbies" value="reading">Reading
+                        <input type="checkbox" id="hobbies" value="writing">Writing</td>
+                </tr>
+                <tr>
+                    <td>
+                        password :
+                    </td>
+                    <td><input type="password" required id="password" placeholder="Enter Password "></td>
+
+                </tr>
+                <tr>
+                    <td>Confirm Password :</td>
+                    <td><input type="password" name="" id="confirm" required placeholder="Enter Confirm Password"></td>
+
+                </tr>
+
+
+
+            </table>
+            <br>
+
+            <button class=" register btn " onclick="registerUser() ">Register</button>
+
+
+        </form>
+        
+  <hr>
+  <h2 class="h2">Login Here</h2>
+  <form id="login-form">
+
+    <label for="username">Username:</label> <input type="text" id="usern" name="username" placeholder="Enter Username"><br><br>
+
+    <label for="password">Password: </label> <input type="password" id="pass" name="password" placeholder="Enter Password"><br><br>
+
+    <button type="submit" class="btn" onclick="loginUser()">Login</button>
+
+         </form>
+
+    </center>
+    <center>
+    <div  class="welcome" id="wel2">Genius is one percent inspiration, ninety-nine percent perspiration.</div>
+    </center>
+
+    
+</body>   
+
+</html>
